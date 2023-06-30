@@ -2,7 +2,8 @@ use boa_engine::{Context, Source};
 
 #[tokio::main]
 async fn main() {
-    worker().await;
+    let j1 = tokio::spawn(worker());
+    tokio::try_join!(j1).unwrap();
 }
 
 async fn worker() {
