@@ -10,5 +10,5 @@ boa_engine = "*"
 tokio = { verison = "^1.29.0", features = ["full"] }
 
 [patch.crates-io]
-"boa_engine" = { path = "../../boa/boa_engine" }
+"boa_engine" = { path = "../boa/boa_engine" }
 # "boa_engine" = { git = 'https://github.com/boa-dev/boa', rev = "ce520fa2baf171b16ddb6aebefed4844e557f0f1" }
