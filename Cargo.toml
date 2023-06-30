@@ -1,0 +1,14 @@
+[package]
+name = "boaengine-send"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+boa_engine = "*"
+tokio = { verison = "^1.29.0", features = ["full"] }
+
+[patch.crates-io]
+"boa_engine" = { path = "../../boa/boa_engine" }
+# "boa_engine" = { git = 'https://github.com/boa-dev/boa', rev = "ce520fa2baf171b16ddb6aebefed4844e557f0f1" }
